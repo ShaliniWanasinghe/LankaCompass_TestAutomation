@@ -1,0 +1,26 @@
+{
+  "name": "lankacompass-testautomation",
+  "version": "1.0.0",
+  "description": "Comprehensive QA Test Automation Suite for LankaCompass (TravelSriLanka) platform using Playwright and Chromium",
+  "main": "automated-qa.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node automated-qa.js",
+    "test:runner": "node run-tests.js"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "playwright",
+    "chromium",
+    "e2e-testing",
+    "travelsrilanka",
+    "lankacompass"
+  ],
+  "author": "Shalini Wanasinghe",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "playwright": "^1.65.1"
+  }
+}

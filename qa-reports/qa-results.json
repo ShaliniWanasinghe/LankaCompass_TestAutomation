@@ -1,0 +1,629 @@
+{
+  "build": {
+    "status": "SUCCESS",
+    "output": "> travelsrilanka@1.0.0 build\n> vite build\n\n\u001b[36mvite v8.3.3 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n✓ 5 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                 52.86 kB │ gzip: 11.49 kB\ndist/assets/index-D9DLZNxN.css  29.22 kB │ gzip:  5.75 kB\ndist/assets/index-DArBFNmi.js    3.92 kB │ gzip:  1.47 kB\n\n\u001b[32m✓ built in 322ms\u001b[39m"
+  },
+  "servers": {
+    "dev": true,
+    "prod": true
+  },
+  "summary": {
+    "total": 63,
+    "passed": 57,
+    "failed": 4,
+    "warned": 2
+  },
+  "tests": [
+    {
+      "id": "TC-BUILD-001",
+      "name": "Vite build execution",
+      "expected": "Build completes without error",
+      "actual": "Build completed successfully",
+      "status": "PASS",
+      "notes": "\u001b[32m✓ built in 322ms\u001b[39m "
+    },
+    {
+      "id": "TC-BUILD-ART-index.html",
+      "name": "Build artifact dist/index.html exists",
+      "expected": "File exists in dist",
+      "actual": "Present",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-BUILD-ART-index-D9DLZNxN.css",
+      "name": "Build artifact dist/assets/index-D9DLZNxN.css exists",
+      "expected": "File exists in dist",
+      "actual": "Present",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-BUILD-ART-index-DArBFNmi.js",
+      "name": "Build artifact dist/assets/index-DArBFNmi.js exists",
+      "expected": "File exists in dist",
+      "actual": "Present",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-SRV-DEV",
+      "name": "Dev server startup (port 5174)",
+      "expected": "HTTP 200 within 25s",
+      "actual": "Started successfully",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-SRV-PROD",
+      "name": "Production preview server startup (port 4173)",
+      "expected": "HTTP 200 within 25s",
+      "actual": "Started successfully",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FUNC-001",
+      "name": "Homepage title verification",
+      "expected": "Contains \"Lanka Compass\"",
+      "actual": "Lanka Compass – One Digital Platform for Sri Lanka Tourism",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FUNC-002",
+      "name": "Hero banner image visibility",
+      "expected": "Hero image visible",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FUNC-003",
+      "name": "Hero platform badge text",
+      "expected": "Contains \"Official Tourist Guide Platform\"",
+      "actual": "🌿 OFFICIAL TOURIST GUIDE PLATFORM",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-DESTINATIONS",
+      "name": "Nav link 'Destinations' scrolls to #destinations",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-ROUTES",
+      "name": "Nav link 'Routes' scrolls to #routes",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-TRANSPORT",
+      "name": "Nav link 'Transport' scrolls to #transport",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-FYK INFO",
+      "name": "Nav link 'FYK Info' scrolls to #fyk",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-Q&A",
+      "name": "Nav link 'Q&A' scrolls to #qa",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-NAV-SCAM ALERT",
+      "name": "Nav link 'Scam Alert' scrolls to #scam-alert",
+      "expected": "Target section visible in viewport",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FILTER-ALL",
+      "name": "Category filter 'All Destinations'",
+      "expected": "Shows 6 cards",
+      "actual": "Shows 6 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FILTER-HERITAGE",
+      "name": "Category filter 'Heritage (Sigiriya, Kandy, Galle)'",
+      "expected": "Shows 3 cards",
+      "actual": "Shows 3 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FILTER-BEACH",
+      "name": "Category filter 'Beach (Mirissa)'",
+      "expected": "Shows 1 cards",
+      "actual": "Shows 1 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FILTER-NATURE",
+      "name": "Category filter 'Nature (Ella)'",
+      "expected": "Shows 1 cards",
+      "actual": "Shows 1 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FILTER-WILDLIFE",
+      "name": "Category filter 'Wildlife (Yala)'",
+      "expected": "Shows 1 cards",
+      "actual": "Shows 1 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FUNC-MODAL-GLOBAL",
+      "name": "Global function registration (window.openDestModal)",
+      "expected": "window.openDestModal is function",
+      "actual": "UNDEFINED (Module scope isolation)",
+      "status": "FAIL",
+      "notes": "ES Module scope isolates top-level functions unless explicitly attached to window."
+    },
+    {
+      "id": "TC-MODAL-CLICK-SIGIRIYA",
+      "name": "Clicking \"View Details\" opens modal via inline onclick",
+      "expected": "Modal overlay receives .open class",
+      "actual": "Failed to open",
+      "status": "FAIL",
+      "notes": ""
+    },
+    {
+      "id": "TC-CODE-MODAL-IMG-PATH",
+      "name": "Modal image source path construction",
+      "expected": "Prefixes `/images/` before data.img",
+      "actual": "Missing `/images/` prefix",
+      "status": "FAIL",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-MOBILE",
+      "name": "FYK tab switch to 'mobile'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-WIFI",
+      "name": "FYK tab switch to 'wifi'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-FOOD",
+      "name": "FYK tab switch to 'food'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-TOILETS",
+      "name": "FYK tab switch to 'toilets'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-DRESS",
+      "name": "FYK tab switch to 'dress'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-FYK-TAB-EMERGENCY",
+      "name": "FYK tab switch to 'emergency'",
+      "expected": "Corresponding panel receives .active class",
+      "actual": "Panel Active",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-QA-GLOBAL-FN",
+      "name": "Global function registration (window.submitQuestion)",
+      "expected": "window.submitQuestion is function",
+      "actual": "UNDEFINED",
+      "status": "FAIL",
+      "notes": ""
+    },
+    {
+      "id": "TC-CONTENT-SCAM-COUNT",
+      "name": "Scam alert cards count",
+      "expected": "6 cards rendered",
+      "actual": "6 cards",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-CONTENT-ROUTES-COUNT",
+      "name": "Popular travel routes count",
+      "expected": "4 routes rendered",
+      "actual": "4 routes",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-CONTENT-TRANSPORT-COUNT",
+      "name": "Transport modes count",
+      "expected": "6 transport modes rendered",
+      "actual": "6 modes",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-CONTENT-FOOTER-LINKS",
+      "name": "Footer navigation links",
+      "expected": "At least 6 links",
+      "actual": "10 links",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-MOBILE-OVERFLOW",
+      "name": "[Mobile] No horizontal scroll overflow",
+      "expected": "scrollWidth <= innerWidth",
+      "actual": "No horizontal overflow",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-MOBILE-HAM-VIS",
+      "name": "[Mobile] Hamburger button visibility",
+      "expected": "Visible at <= 768px",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-MOBILE-HAM-EXPAND",
+      "name": "[Mobile] Hamburger toggles mobile menu",
+      "expected": "nav-links receives .open class",
+      "actual": "Menu Opened",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-MOBILE-HAM-CLOSE",
+      "name": "[Mobile] Menu closes upon selecting link",
+      "expected": "nav-links loses .open class",
+      "actual": "Closed",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-TABLET-OVERFLOW",
+      "name": "[Tablet] No horizontal scroll overflow",
+      "expected": "scrollWidth <= innerWidth",
+      "actual": "No horizontal overflow",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-TABLET-HAM-VIS",
+      "name": "[Tablet] Hamburger button visibility",
+      "expected": "Visible at <= 768px",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-TABLET-HAM-EXPAND",
+      "name": "[Tablet] Hamburger toggles mobile menu",
+      "expected": "nav-links receives .open class",
+      "actual": "Menu Opened",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-TABLET-HAM-CLOSE",
+      "name": "[Tablet] Menu closes upon selecting link",
+      "expected": "nav-links loses .open class",
+      "actual": "Closed",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-DESKTOP-OVERFLOW",
+      "name": "[Desktop] No horizontal scroll overflow",
+      "expected": "scrollWidth <= innerWidth",
+      "actual": "No horizontal overflow",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-RESP-DESKTOP-NAV-DESKTOP",
+      "name": "[Desktop] Desktop navigation bar visibility",
+      "expected": "Visible without hamburger",
+      "actual": "Visible",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-sri_lanka_",
+      "name": "Asset load (Dev): sri_lanka_hero_1784522884680.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-sri_lanka_",
+      "name": "Asset load (Prod): sri_lanka_hero_1784522884680.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-ella_train",
+      "name": "Asset load (Dev): ella_train_1784522895792.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-ella_train",
+      "name": "Asset load (Prod): ella_train_1784522895792.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-sigiriya_r",
+      "name": "Asset load (Dev): sigiriya_rock_1784522913894.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-sigiriya_r",
+      "name": "Asset load (Prod): sigiriya_rock_1784522913894.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-kandy_temp",
+      "name": "Asset load (Dev): kandy_temple_1784522927450.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-kandy_temp",
+      "name": "Asset load (Prod): kandy_temple_1784522927450.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-mirissa_be",
+      "name": "Asset load (Dev): mirissa_beach_1784522947085.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-mirissa_be",
+      "name": "Asset load (Prod): mirissa_beach_1784522947085.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-DEV-galle_fort",
+      "name": "Asset load (Dev): galle_fort_1784522959122.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-ASSET-PROD-galle_fort",
+      "name": "Asset load (Prod): galle_fort_1784522959122.png",
+      "expected": "HTTP 200",
+      "actual": "HTTP 200",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-SEC-ESCAPE-BASIC",
+      "name": "escapeHtml sanitizes &, <, >, \"",
+      "expected": "All 4 characters escaped",
+      "actual": "Sanitized",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-SEC-ESCAPE-SQUOTE",
+      "name": "escapeHtml sanitizes single quote (')",
+      "expected": "Escapes single quote to &#39;",
+      "actual": "NOT ESCAPED (Attribute injection risk)",
+      "status": "WARN",
+      "notes": ""
+    },
+    {
+      "id": "TC-SEC-EXPOSED-SECRETS",
+      "name": "Hardcoded API secrets / tokens check",
+      "expected": "Zero exposed secrets",
+      "actual": "None detected",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-SEC-REL-NOOPENER",
+      "name": "External target=\"_blank\" links have rel=\"noopener\"",
+      "expected": "All external links include rel=\"noopener\"",
+      "actual": "0 target=_blank links, 0 with noopener",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-A11Y-IMG-ALT",
+      "name": "All static <img> tags possess descriptive alt text",
+      "expected": "Zero images missing alt",
+      "actual": "0 missing alt attribute",
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "id": "TC-A11Y-MODAL-ROLE",
+      "name": "Modal overlay accessibility semantics (role=\"dialog\")",
+      "expected": "role=\"dialog\" present",
+      "actual": "Missing ARIA dialog semantics",
+      "status": "WARN",
+      "notes": ""
+    },
+    {
+      "id": "TC-A11Y-BTN-LABELS",
+      "name": "Interactive buttons have accessible names or aria-label",
+      "expected": "Zero unlabelled buttons",
+      "actual": "0 unlabelled buttons",
+      "status": "PASS",
+      "notes": ""
+    }
+  ],
+  "defects": [
+    {
+      "id": "BUG-001",
+      "title": "Interactive button onclick handlers fail with ReferenceError (openDestModal, closeModal, submitQuestion, scrollToTop)",
+      "severity": "Critical",
+      "priority": "P0",
+      "module": "Core UI Interactivity",
+      "steps": "1. Open application\n2. Click any \"View Details\" button (#btn-sigiriya)\n3. Check browser console",
+      "expected": "Modal opens displaying destination details",
+      "actual": "Uncaught ReferenceError: openDestModal is not defined. Modal does not open.",
+      "evidence": "Console error: Uncaught ReferenceError: openDestModal is not defined",
+      "file": "src/main.js:186 & index.html:140"
+    },
+    {
+      "id": "BUG-002",
+      "title": "Destination modal image source missing `/images/` directory prefix",
+      "severity": "High",
+      "priority": "P1",
+      "module": "Destination Modal",
+      "steps": "1. Open destination modal (e.g. for Sigiriya)\n2. Inspect modal <img> element src attribute\n3. Note 404 HTTP failure",
+      "expected": "Modal displays destination image loaded from /images/sigiriya_rock_*.png",
+      "actual": "Modal sets src=\"sigiriya_rock_*.png\" (relative to current path), resulting in 404 broken image",
+      "evidence": "src/main.js line 195: imgHtml = `<img src=\"${data.img}\"...` instead of `/images/${data.img}`",
+      "file": "src/main.js:195"
+    },
+    {
+      "id": "BUG-003",
+      "title": "Submitted Q&A community questions are not persisted (lost upon page refresh)",
+      "severity": "High",
+      "priority": "P1",
+      "module": "Q&A Module",
+      "steps": "1. Fill in question in Q&A form\n2. Submit question\n3. Reload page",
+      "expected": "Submitted question persists and remains visible after page reload",
+      "actual": "Question is prepended into in-memory DOM (#qa-dynamic-list) only and permanently vanishes on refresh",
+      "evidence": "src/main.js lines 276-297: document.createElement & prepend into DOM without localStorage, indexedDB or backend API call",
+      "file": "src/main.js:252-315"
+    },
+    {
+      "id": "BUG-004",
+      "title": "Incomplete HTML sanitization in escapeHtml: single quotes not encoded",
+      "severity": "Medium",
+      "priority": "P2",
+      "module": "Security",
+      "steps": "1. Submit input containing single quotes: ' onmouseover='alert(1)\n2. Inspect rendered DOM",
+      "expected": "Single quote replaced by &#39; or &apos;",
+      "actual": "Single quote preserved raw, creating potential XSS if injected into HTML attribute context",
+      "evidence": "src/main.js lines 317-319: replace(/&/g, ...).replace(/</g, ...).replace(/>/g, ...).replace(/\"/g, ...)",
+      "file": "src/main.js:317-319"
+    },
+    {
+      "id": "BUG-005",
+      "title": "Destination modal overlay lacks ARIA accessibility roles (role=\"dialog\", aria-modal=\"true\")",
+      "severity": "Low",
+      "priority": "P3",
+      "module": "Accessibility",
+      "steps": "1. Inspect #modal-overlay and #modal-box elements in DOM\n2. Check ARIA attributes",
+      "expected": "Elements have role=\"dialog\" aria-modal=\"true\" aria-labelledby for screen readers",
+      "actual": "No ARIA role or accessibility metadata defined on modal markup",
+      "evidence": "index.html lines 1074-1079: <div class=\"modal-overlay\" id=\"modal-overlay\"...>",
+      "file": "index.html:1074-1079"
+    }
+  ],
+  "consoleErrors": {
+    "dev": [
+      "Uncaught Exception: openDestModal is not defined",
+      "Uncaught Exception: submitQuestion is not defined"
+    ],
+    "prod": []
+  },
+  "networkFailures": {
+    "dev": [],
+    "prod": []
+  },
+  "screenshots": [
+    {
+      "name": "01-desktop-home",
+      "path": "qa-reports/screenshots/01-desktop-home.png"
+    },
+    {
+      "name": "02-desktop-fyk",
+      "path": "qa-reports/screenshots/02-desktop-fyk.png"
+    },
+    {
+      "name": "03-desktop-footer",
+      "path": "qa-reports/screenshots/03-desktop-footer.png"
+    },
+    {
+      "name": "04-viewport-mobile",
+      "path": "qa-reports/screenshots/04-viewport-mobile.png"
+    },
+    {
+      "name": "05-viewport-mobile-nav-open",
+      "path": "qa-reports/screenshots/05-viewport-mobile-nav-open.png"
+    },
+    {
+      "name": "04-viewport-tablet",
+      "path": "qa-reports/screenshots/04-viewport-tablet.png"
+    },
+    {
+      "name": "05-viewport-tablet-nav-open",
+      "path": "qa-reports/screenshots/05-viewport-tablet-nav-open.png"
+    },
+    {
+      "name": "04-viewport-desktop",
+      "path": "qa-reports/screenshots/04-viewport-desktop.png"
+    }
+  ]
+}
